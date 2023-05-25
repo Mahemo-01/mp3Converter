@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+
+:root {
+  --white-color: #ffffff;
+  --light-color: #f0f3f5;
+  --black-color: #191919;
+  /* --dark-color:  #343a40; */
+  --dark-color: #262626;
+
+  --red-color: #dc3848;
+  --pink-color: #ff6c84;
+  --purple-color: #5E60CE;
+
+  /* --yellow-color:   #ffc107; */
+  /* --orange-color:   #ff7f07; */
+
+  --blue-color: #67aefa;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
