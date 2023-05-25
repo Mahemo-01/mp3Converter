@@ -1,24 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Montserrat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter';
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Inter'; */
 }
 
 :root {
   --white-color: #ffffff;
   --light-color: #f0f3f5;
   --black-color: #191919;
-  /* --dark-color:  #343a40; */
   --dark-color: #262626;
-
   --red-color: #dc3848;
   --pink-color: #ff6c84;
   --purple-color: #5E60CE;
-
-  /* --yellow-color:   #ffc107; */
-  /* --orange-color:   #ff7f07; */
-
+  --neon-green-color: #90ed4e;
   --blue-color: #67aefa;
 }
 
@@ -26,6 +24,9 @@ body {
   min-height: 100vh;
   background-color: var(--black-color);
   color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body::-webkit-scrollbar {
@@ -34,9 +35,75 @@ body::-webkit-scrollbar {
 
 input {
   outline: none;
+  border: none;
 }
 
 button {
   cursor: pointer;
   border: none;
+}
+
+.remaining {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--neon-green-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  gap: 1rem;
+}
+
+.form input {
+  min-width: 300px;
+  height: 100%;
+
+  padding: 0 1rem;
+  font-size: 16px;
+  border-radius: .5rem;
+}
+
+.form button {
+  width: 5rem;
+  height: 100%;
+  font-size: 1rem;
+
+  background: var(--pink-color);
+  color: white;
+  border-radius: .5rem;
+}
+
+a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: all .8s;
+}
+
+a:hover {
+  color: var(--pink-color);
+}
+
+.musicTitle {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--light-color);
 }
